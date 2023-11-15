@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Tarefa 5 - Javascript</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="calculadora">
+        <h2>Calculadora</h2>
+        <input type="number" id="valor1" placeholder="Valor 1">
+        <input type="number" id="valor2" placeholder="Valor 2">
+        <select id="operacao">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <button onclick="calcular()">Calcular</button>
+        <p>Resultado: <span id="resultadoCalculadora"></span></p>
+    </div>
+
+    <div id="tabuada">
+        <h2>Tabuada</h2>
+        <input type="number" id="numeroTabuada" placeholder="Digite um número">
+        <button onclick="gerarTabuada()">Gerar Tabuada</button>
+        <div id="resultadoTabuada"></div>
+    </div>
+
+    <div id="loopNumeros">
+        <h2>Números de 10 a 100</h2>
+        <button onclick="mostrarNumeros()">Mostrar Números</button>
+        <div id="listaNumeros"></div>
+    </div>
+
+    <div id="valoresPares">
+        <h2>Valores Pares</h2>
+        <button onclick="mostrarPares()">Mostrar Valores Pares</button>
+        <div id="resultadoPares"></div>
+    </div>
+
+    <div id="custoCarro">
+        <h2>Custo do Carro</h2>
+        <input type="number" id="custoFabrica" placeholder="Custo de Fábrica">
+        <input type="number" id="percDistribuidor" placeholder="% Distribuidor">
+        <input type="number" id="percImpostos" placeholder="% Impostos">
+        <button onclick="calcularCustoCarro()">Calcular Custo</button>
+        <p>Custo Final: <span id="resultadoCustoCarro"></span></p>
+    </div>
+
+    <script src="js/calculadora.js"></script>
+    <script src="js/tabuada.js"></script>
+    <script src="js/loopNumeros.js"></script>
+    <script src="js/valoresPares.js"></script>
+    <script src="js/custoCarro.js"></script>
+</body>
+</html>
